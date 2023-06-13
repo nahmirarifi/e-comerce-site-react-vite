@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
-
 interface Post {
     id: number;
     title: string;
     body: string;
 }
 
-
-
-export const Home: React.FC = () => {
+const FakePostData: React.FC = () => {
     const [posts, setPosts] = useState<Post[]>([]);
 
     useEffect(() => {
@@ -45,4 +42,4 @@ export const Home: React.FC = () => {
     );
 };
 
-
+export default FakePostData;
